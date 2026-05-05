@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Experiment 1: Class Timetable</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .lunch-break {
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container my-5">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1 class="display-5 text-primary">Class Time Table</h1>
+                <p class="lead">Interactive Schedule using Bootstrap Grid & Tables</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- table-responsive allows horizontal scroll on tiny screens -->
+                <div class="table-responsive shadow rounded border">
+                    <table class="table table-bordered table-striped table-hover mb-0 text-center align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Day / Time</th>
+                                <th>09:00 - 10:00</th>
+                                <th>10:00 - 11:00</th>
+                                <th>11:00 - 11:15</th>
+                                <th>11:15 - 12:15</th>
+                                <th>12:15 - 01:15</th>
+                                <th>01:15 - 02:15</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="table-secondary">Monday</th>
+                                <td>Mathematics</td>
+                                <td>Physics</td>
+                                <td rowspan="5" class="table-warning align-middle text-uppercase fw-bold">B<br>R<br>E<br>A<br>K</td>
+                                <td>EAD (Bootstrap)</td>
+                                <td rowspan="5" class="table-info align-middle text-uppercase fw-bold">L<br>U<br>N<br>C<br>H</td>
+                                <td>Lab - Java</td>
+                            </tr>
+                            <tr>
+                                <th class="table-secondary">Tuesday</th>
+                                <td>EAD (Bootstrap)</td>
+                                <td>OS</td>
+                                <td>Data Structures</td>
+                                <td>Library</td>
+                            </tr>
+                            <tr>
+                                <th class="table-secondary">Wednesday</th>
+                                <td>Physics</td>
+                                <td>Mathematics</td>
+                                <td>OS</td>
+                                <td>Sports</td>
+                            </tr>
+                            <tr>
+                                <th class="table-secondary">Thursday</th>
+                                <td>Data Structures</td>
+                                <td>English</td>
+                                <td>Mathematics</td>
+                                <td>Lab - EAD</td>
+                            </tr>
+                            <tr>
+                                <th class="table-secondary">Friday</th>
+                                <td>English</td>
+                                <td>OS</td>
+                                <td>Physics</td>
+                                <td>Seminar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card bg-primary text-white p-3 mb-2">
+                    <h5>Note:</h5>
+                    <p class="small mb-0">The layout is fully responsive. On smaller devices, the table becomes scrollable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
